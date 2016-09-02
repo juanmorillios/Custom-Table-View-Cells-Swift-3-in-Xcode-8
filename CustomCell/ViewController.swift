@@ -77,7 +77,7 @@ class TableViewController: UITableViewController {
         }
         else if arrayOfCellData[indexPath.row].cell == 2 {
          
-           return 70
+           return 90
         }
         else {
         
