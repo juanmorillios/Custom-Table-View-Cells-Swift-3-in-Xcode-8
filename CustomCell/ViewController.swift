@@ -8,18 +8,38 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+struct cellData {
+    let cell : Int!
+    let text : String!
+    let image : UIImage!
+    
+}
 
+class TableViewController: UITableViewController {
+
+    var arrayOfCellData = [cellData]()
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        arrayOfCellData = [cellData(cell : 1, text : "", image : ), ]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+      return 2
     }
-
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        <#code#>
+    }
+   
+    
+    
 }
 
